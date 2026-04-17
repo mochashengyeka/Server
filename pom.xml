@@ -30,11 +30,12 @@
         <java.version>17</java.version>
     </properties>
     <dependencies>
-        <!-- Spring Boot Web 起步依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+
 
         <!-- MyBatis-Plus Spring Boot 3 适配 -->
         <dependency>
@@ -42,34 +43,26 @@
             <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
             <version>3.5.5</version>
         </dependency>
-
-        <!-- PostgreSQL 驱动（必须添加，否则无法连接数据库） -->
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-
-        <!-- Spring Boot DevTools（热部署，开发时使用） -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-
-        <!-- Lombok（简化实体类代码） -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-
-        <!-- Spring Boot Test（单元测试） -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <!-- 版本号通常由 Spring Boot Parent 管理，无需显式指定，若需指定建议使用 42.7.3 或更高版本 -->
         </dependency>
     </dependencies>
 
