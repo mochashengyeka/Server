@@ -1,7 +1,16 @@
 spring:
   datasource:
-    driver-class-name: org.postgresql.Driver  # MySQL用 com.mysql.cj.jdbc.Driver
-    url: jdbc:postgresql://localhost:5432/lab_db  # MySQL改为 jdbc:mysql://localhost:3306/lab_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/lab_db
     username: postgres
-    password: 123456  # 替换为你的数据库密码
+    password: 123456
 
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      # password: 你的Redis密码（如果没有设置密码，保持注释或删除该行）
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
