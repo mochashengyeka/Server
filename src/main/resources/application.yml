@@ -5,6 +5,9 @@ spring:
     username: root
     password: '@Lyh20040816'
 
+  ai:
+    dashscope:
+      api-key: ${AI_DASHSCOPE_API_KEY}
 
   data:
     redis:
